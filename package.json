@@ -14,7 +14,8 @@
     "test:module5": "cross-env NODE_ENV=test mocha 'test/unit/mocha/part5/*.spec.js' || true",
     "test": "cross-env NODE_ENV=test mocha 'test/unit/mocha/**/*.spec.js' || true",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "build:test": "webpack --config build/webpack.devtest.conf.js"
   },
   "dependencies": {
     "axios": "^0.17.1",
